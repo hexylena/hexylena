@@ -39,7 +39,7 @@ jobs:
           user: hexylena
           template: classic
           base: header
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Amsterdam
   lines:
     runs-on: ubuntu-latest
     steps:
@@ -66,7 +66,7 @@ jobs:
           user: hexylena
           template: classic
           base: activity, community
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Amsterdam
 
   iso_calender:
     runs-on: ubuntu-latest
@@ -83,7 +83,7 @@ jobs:
           user: hexylena
           template: classic
           base: ""
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Amsterdam
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -95,7 +95,7 @@ jobs:
           filename: github-habits.svg
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
+          config_timezone: Europe/Amsterdam
           user: hexylena
           base: ""
           template: classic
@@ -120,7 +120,7 @@ jobs:
           user: hexylena
           template: classic
           base: ""
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Amsterdam
           plugin_followup: yes
           plugin_languages: yes
 
@@ -140,4 +140,4 @@ jobs:
           user: hexylena
           template: classic
           base: repositories
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
+          config_timezone: Europe/Amsterdam
