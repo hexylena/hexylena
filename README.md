@@ -1,1 +1,1 @@
-This is not a place of honour.
+Failure is not an option.
